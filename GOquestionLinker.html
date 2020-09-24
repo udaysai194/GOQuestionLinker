@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gate Overflow pdf question linker</title>
+    </head>
+    <body>
+        <p style="height: 50px;"></p>
+        <center> <input type="number" id="Qno"> </center>
+        <center> <button type="button" style="margin: 10px;" onclick="myFunction()" >goto question</button> </center>
+
+        
+    
+        <script>
+            function myFunction() {
+              var Qno = document.getElementById("Qno").value;
+              window.open( 
+              "https://www.gateoverflow.in/"+Qno, "_blank");
+
+              document.getElementById("Qno").value = "";
+            }
+        </script>
+
+    </body>
+</html>
